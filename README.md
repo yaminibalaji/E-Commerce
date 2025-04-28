@@ -61,22 +61,22 @@ This project is a **full-fledged e-commerce backend API** managing essential sto
 
 ---
 
-### Installation Steps
+## Installation Steps
 
 1. **Clone the Repository:**
 
-```bash
-git clone "https://github.com/yaminibalaji/E-Commerce.git"
-cd ecommerce
+- bash
+- git clone "https://github.com/yaminibalaji/E-Commerce.git"
+- cd ecommerce
 
-* Set up MySQL Database:
+2. Set up MySQL Database:
    CREATE DATABASE ecommerce_db;
-* Install Project Dependencies:
+3.  Install Project Dependencies:
    mvn clean install
-* Configuration
+4. Configuration
   Update your configuration file at src/main/resources/application.yaml:
 
-**application.yaml**
+```**application.yaml**
 
 server:
   port: 8080
@@ -99,28 +99,10 @@ stripe:
   api:
     key: [your-stripe-test-api-key]
 
-📂 Explore the API Documentation : http://localhost:8080/swagger-ui.html
 
-**Frontend Setup (React.js)**
-
-- React frontend is optional, but recommended for full-stack testing.
-- Connect your React app to the backend APIs running at http://localhost:8080.
-- Ensure CORS settings allow frontend requests (already configured in the backend if needed).
-
-🌟 API Highlights
-
-Method | Endpoint | Description | Access
-POST | /api/auth/register | Register a new user | Public
-POST | /api/auth/login | Obtain JWT token | Public
-GET | /api/products | List all products | Public
-GET | /api/products?category=books | Filter products by category | Public
-POST | /api/products | Add a new product | Admin Only
-GET | /api/cart | View current user's cart | User
-POST | /api/cart | Add item to cart | User
-POST | /api/orders | Place an order | User
-
-📁 Project Structure
-
+```
+## 📁 Project Structure
+```
 ecommerce-backend/
 ├── src/
 │   ├── main/
@@ -152,10 +134,10 @@ ecommerce-backend/
 ├── README.md
 ├── pom.xml
 └── LICENSE
+```
 
-
-🗺️ ER Diagram (Mermaid)
-
+## 🗺️ ER Diagram (Mermaid)
+```
 erDiagram
     USER ||--o{ ORDER : places
     USER ||--o{ CART : has
@@ -204,7 +186,27 @@ erDiagram
 
 
 
+```
+📂 Explore the API Documentation : http://localhost:8080/swagger-ui.html
 
+**Frontend Setup (React.js)**
+
+- React frontend is optional, but recommended for full-stack testing.
+- Connect your React app to the backend APIs running at http://localhost:8080.
+- Ensure CORS settings allow frontend requests (already configured in the backend if needed).
+
+## 🌟 API Highlights
+
+| Method | Endpoint | Description | Access |
+| :--- | :--- | :--- | :--- |
+| POST | /api/auth/register | Register a new user | Public |
+| POST | /api/auth/login | Obtain JWT token | Public |
+| GET | /api/products | List all products | Public |
+| GET | /api/products?category=books | Filter products by category | Public |
+| POST | /api/products | Add a new product | Admin Only |
+| GET | /api/cart | View current user's cart | User |
+| POST | /api/cart | Add item to cart | User |
+| POST | /api/orders | Place an order | User |
 
 🧪 Testing
 
@@ -234,13 +236,13 @@ Contributions are welcome and appreciated! 🌟
 5. Open a pull request.
 
 📬 Contact
-Hi, I’m Muttum Venkata Yamini, a passionate Java Backend Developer!
+ Hi, I’m Muttum Venkata Yamini, a passionate Java Backend Developer!
 
-  📧 Email: venkatayaminimuttum.com
+   - 📧 Email: venkatayaminimuttum.com
 
-  🐙 GitHub: github.com/MuttumVenkataYamini
+   - 🐙 GitHub: github.com/MuttumVenkataYamini
 
-  🌐 Portfolio: 
+   - 🌐 Portfolio: 
 
 ⭐ If you like this project, don't forget to star the repo and share your feedback!
 
